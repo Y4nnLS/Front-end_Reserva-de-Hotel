@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/LoginCadastro.css">
+    <title>Entrar na conta</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+
+        .error-message {
+            font-size: 12px;
+            color: red;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="scroll">
+                <h1>Cadastre-se</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <span>ou se cadastre com email</span>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="fistname">Primeiro nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" class="input-field" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input type="tel" id="number" class="input-field" type="number" name="number" autocomplete="tel" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                    <script>
+                        document.getElementById('number').addEventListener('input', function (e) {
+                            let input = e.target.value.replace(/\D/g, '');
+                            if (input.length > 2) {
+                                input = `(${input.slice(0, 2)}) ${input.slice(2, 7)}-${input.slice(7, 11)}`;
+                            } else if (input.length > 0) {
+                                input = `(${input.slice(0, 2)})`;
+                            }
+                            e.target.value = input;
+                        });
+                    </script>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" class="input-field" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Confirme sua senha</label>
+                        <input id="Confirmpassword" class="input-field" type="password" name="password" placeholder="Confirme sua senha" required>
+                        <div class="error-message" id="error-message"></div>
+                    </div>
+
+                </div>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Entrar na conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu email</span>
+                <label for="email" class="Login-input">Digite seu email</label>
+                <input type="email" placeholder="Email">
+                <label for="password" class="Login-input">Digite sua senha</label>
+                <input type="password" placeholder="Senha">
+                <a href="#">Esqueceu a senha?</a>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo novamente!</h1>
+                    <p>Entre em sua conta para usar todos os recursos do site</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Seja bem vindo!</h1>
+                    <p>Registre-se para usar todos os recursos do site</p>
+                    <button class="hidden" id="register">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('Confirmpassword').addEventListener('input', function() {
+            var password = document.getElementById('password').value;
+            var confirmPassword = this.value;
+            var errorMessage = document.getElementById('error-message');
+
+            if (password !== confirmPassword) {
+                errorMessage.innerText = 'As senhas não coincidem!';
+                errorMessage.style.color = 'red';
+                this.classList.add('error');
+            } else {
+                errorMessage.innerText = '';
+                errorMessage.style.color = 'transparent';
+                this.classList.remove('error');
+            }
+        });
+    </script>
+</body>
+
+</html>

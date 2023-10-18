@@ -7,6 +7,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#scroll{
+    overflow:auto; 
+   }
+
+.Login-input{
+    align-items: flex-start;
+}
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -228,4 +235,13 @@ body{
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+@media (max-width: 1200px) {
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem 0;
+    }
 }
