@@ -305,3 +305,21 @@ Carrossel de imagens
   margin-top: -5px;
   transform: scale(110%);
 }
+
+.ver-mais {
+  text-align: center;
+  margin-top: 20px; /* Adicione um espaçamento superior opcional */
+}
+
+.btn-ver-mais {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b50d8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-ver-mais:hover {
+  background-color: #593a94;
+}
