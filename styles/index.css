@@ -282,12 +282,12 @@ Carrossel de imagens
   border-radius: 3%;
 }
 
-.card-item {
+.hoteis-card .card-item {
   padding: 10px;
   
 }
 
-.card-item p {
+.hoteis-card .card-item p {
   margin: 5px 0;
   font-size: 0.9em;
 }
