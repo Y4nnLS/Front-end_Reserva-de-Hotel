@@ -1,18 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  body {
-    color: #000000;
-  }
-  
-  /*header*/
-  a {
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section, 
+footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+p{
+    color: black;
+    
+}
+
+.footer{
+    background-color: #512da8;
+    text-align: center;
+    
+}
+
+.footer i{
+    color: #512da8;
+    font-size:19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.footer i:hover{
+    color: #ffffff;
+    transform: scale(120%);
+    background-color: #af8dff;
+    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* altura do rodapé */
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: black;
+}
+
+.sobre .sobre-img{
+    width: 80%;
+}
+
+.sobre .sobre-img img{
+    margin-left: 150px;
+    width: 70%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #512da8;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn.animated-btn{
+    animation: animated-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: #af8dff;
+}
+
+/*Estilização do header*/
+a {
     text-decoration: none;
     color: inherit;
   }
@@ -27,7 +122,7 @@
     position: relative;
     box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
   }
-
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -37,7 +132,7 @@
     margin: 0 auto;
     padding: 16px;
   }
-
+  
   .brand-name {
     font-size: 32px;
     font-weight: bold;
@@ -144,154 +239,3 @@
       position: fixed;
     }
   }
-  
-  /*footer*/
-  footer{
-    padding: 54px 0;
-  }
-
-  .footer{
-    background-color: #512da8;
-    text-align: center;
-  }
-
-  .footer i{
-    color: #512da8;
-    font-size:19px;
-    background-color: white;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 10px;
-    transition: 0.2s;
-  }
-
-  .footer i:hover{
-    color: #ffffff;
-    transform: scale(120%);
-    background-color: #af8dff;
-    
-  }
-
-  /*main*/
-  
-  .mapamundi{
-    margin-top: 0;
-  }
-  p {
-  font-size: 18px;
-  margin-top: 10px; 
-  color: #202024;
-  }
-
-  .principal {
-    align-items: center;
-    text-align: center;
-  }
-
-  main .container {
-  height: 80vh;
-  display: grid;
-  }
-
-  .icone {
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-}
-
- /*Estilização card de como funciona*/
- .cards{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 8px;
-}
-
-.container__cards {
-  text-align: center; /* Centraliza o conteúdo */
-}
-.depoimentos{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-
-}
-.depoimentos .card-item{
-  background-color: #af8dff;
-  margin: 15px;
-  border-radius: 14px;
-  text-align: center;
-  width: 350px;
-  height: 250px;
-  transition: 0.2s;
-}
-
-.depoimentos .card-item img{
-  border-radius: 80%;
-  width: 80px;
-}
-
-.depoimentos .card-item .nome-user{
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 15px;
-  transition: 0.2s;
-}
-
-.depoimentos .card-item  .depoimento-user{
-  font-size: 15px;
-  padding: 0 15px;
-}
-
-.depoimentos .card-item:hover{
-  background-color: #6546af;
-  margin-top: -5px;
-}
-.depoimentos .card-item:hover .nome-user,
-.depoimentos .card-item:hover .depoimento-user{
-  color: white;
-}
-
-/*sla*/
-.container__descricao{
-  text-align: center;
-  margin-top: 20px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 8px;
-}
-
-.card-item {
-  margin: 20px;
-  border-radius: 14px;
-  text-align: center;
-  width: 500px;
-  height: 350px;
-}
-
-.card-item img {
-  border-radius: 3%;
-  width: 100%;
-}
-
-.card-item-a img {
-  border-radius: 3%;
-  width: 100%;
-  height: 335px;
-}
-
-.card-item .nome-user {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 15px;
-  transition: 0.2s;
-}
-
-.card-item .depoimento-user {
-  font-size: 15px;
-  padding: 0 15px;
-}
