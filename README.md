@@ -1,6 +1,6 @@
 <h1 align='center'>
-    <img src="./assets/img1.png">
-    <p>Front-end -- Gyby</p>
+    <img src="assets/img/logo_gyby2-removebg-preview.png">
+    <p>Reserve já seu quarto de hotel!!</p>
 </h1>
 
 ## 🙋‍♂️ Equipe de desenvolvedores
