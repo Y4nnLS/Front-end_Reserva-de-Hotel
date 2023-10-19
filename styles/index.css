@@ -252,5 +252,8 @@
 /*sla*/
 .container__descricao{
   text-align: center;
+  justify-content: center;
   margin-top: 20px;
 }
+
+/*Carrossel de imagens*/
