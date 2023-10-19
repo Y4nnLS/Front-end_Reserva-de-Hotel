@@ -24,33 +24,230 @@ p{
     
 }
 
-.aside-nav-itens .aside-nav-item {
-    margin-bottom: 23px;
+.footer{
+    background-color: #512da8;
+    text-align: center;
+    
 }
 
-.aside-nav-itens .aside-nav-item.selected a {
-    font-weight: 600;
+.footer i{
+    color: #512da8;
+    font-size:19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: 0.2s;
 }
 
-.aside-nav-itens .aside-nav-item a {
-    position: relative;
-    font-size: 18px;
+.footer i:hover{
+    color: #ffffff;
+    transform: scale(120%);
+    background-color: #af8dff;
+    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* altura do rodapé */
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.central-ajuda .banner {
+    background-image: url(https://www.cookieyes.com/wp-content/uploads/2022/05/Privacy-policy-01.png)
+}
+.banner .item.mob{
+    height: 200px;
+}
+.banner .item .info{
+    background-color: transparent;
+    color: #fff;
     font-family: Montserrat;
-    font-weight: 500;
-    color: #3c3937 !important;
-    line-height: 0.92;
-    letter-spacing: -1.2px;
-}
-
-.aside-nav-itens .aside-nav-item.selected a::after {
-    content:" ";
-    width: 26px;
-    height: 4px;
-    background-color: #b93b83;
+    color: #ffffff;
+    padding: 10px 40px;
+    max-width: unset;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: unset;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 50px;
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: -5px;
-    margin: 0;
-    padding: 0;
-
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
+    text-transform: uppercase;
 }
+.banner .item {
+    height: 393px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner .item.mob .info {
+    font-size: 24px;
+}
+
+.btn{
+    background-color: #512da8;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn.animated-btn{
+    animation: animated-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: #af8dff;
+}
+
+/*Estilização do header*/
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  header {
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .brand-name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  li {
+    color: #e1e1e6;
+    font-size: 20px;
+  
+    transition: color 0.1s;
+  }
+  
+  li.active,
+  li:hover {
+    color: #6b6b6b;
+  }
+  
+  li a {
+    padding: 8px;
+  }
+  
+  
+  @media (min-width: 960px) {
+    .hide-on-desktop {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .navbar-links {
+      opacity: 0;
+      transform: translateY(-140%);
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+  
+      flex-direction: column;
+      background-color: #202024;
+      box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
+      padding: 32px 0;
+      border-top: outset;
+      gap: 0;
+      z-index: -1;
+    
+      transition: 0.5s;
+    }
+  
+    .navbar-links.show {
+      opacity: 1;
+      top: 100%;
+      transform: translateY(0);
+    }
+  
+    .navbar-links li {
+      text-align: center;
+    }
+  
+    .navbar-links li a {
+      line-height: 40px;
+      width: 100%;
+      display: block;
+    }
+  
+    .menu-hamb-button {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+  
+    .btn-line {
+      width: 24px;
+      height: 3px;
+      background: #e1e1e6;
+      transition: 0.3s;
+    }
+  
+    .menu-hamb-button.isOpen .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-hamb-button.isOpen .btn-line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-hamb-button.isOpen .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+  
+    .menu-overlay {
+      position: unset;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -2;
+    }
+    
+    .menu-overlay.show {
+      position: fixed;
+    }
+  }
