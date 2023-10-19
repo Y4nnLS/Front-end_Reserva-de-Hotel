@@ -1,15 +1,113 @@
-* {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    color: #000000;
-  }
-  
-  /*header*/
-  a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section, 
+footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+p{
+    color: black;
+    
+}
+
+.footer{
+    background-color: #512da8;
+    text-align: center;
+    
+}
+
+.footer i{
+    color: #512da8;
+    font-size:19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.footer i:hover{
+    color: #ffffff;
+    transform: scale(120%);
+    background-color: #af8dff;
+    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* altura do rodapé */
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: black;
+}
+
+.sobre .sobre-img{
+    width: 80%;
+}
+
+.sobre .sobre-img img{
+    margin-left: 150px;
+    width: 70%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #512da8;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn.animated-btn{
+    animation: animated-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: #af8dff;
+}
+
+/*Estilização do header*/
+a {
     text-decoration: none;
     color: inherit;
   }
@@ -34,7 +132,7 @@
     margin: 0 auto;
     padding: 16px;
   }
-
+  
   .brand-name {
     font-size: 32px;
     font-weight: bold;
@@ -141,118 +239,3 @@
       position: fixed;
     }
   }
-  
-  /*footer*/
-  footer{
-    padding: 54px 0;
-  }
-
-  .footer{
-    background-color: #512da8;
-    text-align: center;
-  }
-
-  .footer i{
-    color: #512da8;
-    font-size:19px;
-    background-color: white;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 10px;
-    transition: 0.2s;
-  }
-
-  .footer i:hover{
-    color: #ffffff;
-    transform: scale(120%);
-    background-color: #af8dff;
-    
-  }
-
-  /*main*/
-  .container {
-    text-align: center; /* Centraliza o conteúdo */
-  }
-  .mapamundi{
-    margin-top: 0;
-  }
-  p {
-  font-size: 18px;
-  margin-top: 10px; 
-  color: #202024;
-  }
-
-  .principal {
-    align-items: center;
-    text-align: center;
-  }
-
-  main .container {
-  height: 80vh;
-  display: grid;
-  }
-
-  .icone {
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-}
-
- /*Estilização card de como funciona*/
- .card-container {
-  display: flex;
-  justify-content: center; /* Centraliza os cards na horizontal */
-  align-items: center; /* Centraliza os cards na vertical */
-  height: 30vh; /* Define a altura do contêiner para ocupar a altura total da tela */
-}
-
-.cards {
-  flex: 1; /* Faz com que os cards tenham a mesma largura */
-  margin: 5px; /* Adiciona algum espaçamento entre os cards */
-}
-
- .card {
-  flex: 1;
-  margin: 0 10px;
-  border: 1px solid #ccc;
-  width: 190px;
-  height: 254px;
-  background: rgba(240, 186, 247);
-  border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #100a;
-}
-
-.card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #f5f5;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
-}
-
-.card span {
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
-}
-
-.card .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 12px;
-}
-
-.card .img {
-  width: 70px;
-  height: 80px;
-  background: #f5f5;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 25px;
-}
