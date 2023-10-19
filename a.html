@@ -1,69 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="a.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="assets/js/index.js" async></script>
+    <title>Gyby - Reserva de Quartos de Hotéis</title>
 </head>
+
 <body>
-    <section class="depoimentos">
-        <div class="container">
-          <h3>Nossos Depoimentos</h3>
-          <p>Veja o que nossos clientes falam de nós para o mundo</p>
-          <div class="cards">
-            <!--card item 1-->
-            <div class="card-item">
-              <img src="img/me.jpg" alt="Gato" />
-              <p class="nome-user">Gato</p>
-              <p class="depoimento-user">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                accusamus ipsum id minus velit dolorum asperiores neque ipsa
-                suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
-                expedita reiciendis qui?
-              </p>
-              <div class="estrelas">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </div>
+    <header>
+        <nav>
+            <a href="/"><img src="assets/img/logo_gyby2-removebg-preview.png" width="170" alt="Logo da Gyby" /></a>
+
+            <ul class="navbar-links">
+                <li class="active">
+                    <a href="/">Início</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contatos</a>
+                </li>
+                <li>
+                    <a href="Login_Cadastro.html">Entrar</a>
+                </li>
+            </ul>
+            <div class="menu-hamb-button hide-on-desktop">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
             </div>
-            <!--end card item1-->
-            <div class="card-item">
-                <img src="img/me.jpg" alt="Gato" />
-                <p class="nome-user">Gato</p>
-                <p class="depoimento-user">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                  accusamus ipsum id minus velit dolorum asperiores neque ipsa
-                  suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
-                  expedita reiciendis qui?
+        </nav>
+    </header>
+    <div class="menu-overlay hide-on-desktop"></div>
+    <main>
+        <section class="container principal">
+            <div>
+                <img src="assets/World Map.svg" class="mapamundi" />
+                <p>
+                    Com a plataforma Gyby você encontra os melhores quartos de hotéis
+                    pelo mundo todo, por um preço camarada.
                 </p>
-                <div class="estrelas">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        </section>
+        <!-- Seção de Depoimentos -->
+        <section class="depoimentos">
+            <div class="container__cards">
+                <h2>Benefícios:</h2>
+                <div class="cards beneficios-card">
+                    <!-- Card 1 -->
+                    <div class="card-item">
+                        <img src="assets/calendar-event.svg" alt="Calendario" />
+                        <p class="nome-user">Agende sua reserva</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+                            accusamus ipsum id minus velit dolorum asperiores neque ipsa
+                            suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
+                            expedita reiciendis qui?
+                        </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card-item">
+                        <img src="assets/camera-video.svg" alt="Camera" />
+                        <p class="nome-user">Tour virtual</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+                            accusamus ipsum id minus velit dolorum asperiores neque ipsa
+                            suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
+                            expedita reiciendis qui?
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card-item">
+                        <img src="assets/credit-card-2-front.svg" alt="camera" />
+                        <p class="nome-user">Pagamento Garantido</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+                            accusamus ipsum id minus velit dolorum asperiores neque ipsa
+                            suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
+                            expedita reiciendis qui?
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="card-item">
-                <img src="img/me.jpg" alt="Gato" />
-                <p class="nome-user">Gato</p>
-                <p class="depoimento-user">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                  accusamus ipsum id minus velit dolorum asperiores neque ipsa
-                  suscipit cum, quas fugit quis reprehenderit dignissimos aut dicta
-                  expedita reiciendis qui?
+            </div>
+        </section>
+        <!-- Seção de Hotéis Populares -->
+        <section class="container secundario">
+            <div class="container__descricao">
+                <h2 class="descricao__titulo">Hoteis mais populares</h2>
+                <p class="descricao__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    dolorum autem ut laborum maiores vitae excepturi doloremque optio
+                    magnam asperiores iusto quas, debitis eveniet voluptatum,
+                    praesentium blanditiis dolore sapiente nulla.
                 </p>
-                <div class="estrelas">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <div class="cards hoteis-card">
+                <!-- Card Hotel 1 -->
+                <div class="card-item">
+                    <img src="assets/img/aaa.png" alt="Hotel 1" />
+                    <p class="nome-user">Pioneiros, Brasil</p>
+                    <p class="depoimento-user">183 km de distancia 28 de out. - 2 de nov.</p>
+                    <p>R$517 noite</p>
                 </div>
-              </div>
+                <!-- Card Hotel 2 -->
+                <div class="card-item">
+                    <img src="assets/img/bbb.png" alt="Hotel 2" />
+                    <p class="nome-user">Bø, Nordland, Nordland, Noruega</p>
+                    <p class="depoimento-user">11647 km de distancia 20 - 25 de out.</p>
+                    <p>R$662 noite</p>
+                </div>
+                <!-- Card Hotel 3 -->
+                <div class="card-item">
+                    <img src="assets/img/ddd.png" alt="Hotel 3" />
+                    <p class="nome-user">Campina Grande do Sul, Brasil</p>
+                    <p class="depoimento-user">Vistas para a montanha e lago 22 - 27 de dez.</p>
+                    <p>R$989 noite</p>
+                </div>
+            </div>
+            <div class="ver-mais">
+                <a href="categorias.html" class="btn-ver-mais">Ver Mais</a>
+            </div>
+        </section>
+        <!-- Seção de Depoimentos de Clientes -->
+        <section class="depoimentos__clientes">
+            <div class="container__clientes">
+                <h3>Nossos Clientes</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur consequuntur
+                    ducimus blanditiis odit necessitatibus excepturi quisquam officiis, neque doloribus repudiandae
+                    repellat nobis ipsam quos quaerat aut? Fuga, iusto saepe?
+                </p>
+                <div class="cards-depoimentos">
+                    <!-- Card Depoimento 1 -->
+                    <div class="card-item-depoimentos">
+                        <img src="assets/img/me.jpg" alt="Docca" />
+                        <p class="nome-user">Docca</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione accusamus ipsum id minus
+                            velit dolorum asperiores neque ipsa suscipit cum, quas fugit quis reprehenderit dignissimos
+                            aut dicta expedita reiciendis qui?
+                        </p>
+                    </div>
+                    <!-- Card Depoimento 2 -->
+                    <div class="card-item-depoimentos">
+                        <img src="assets/img/me.jpg" alt="Docca" />
+                        <p class="nome-user">Docca</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione accusamus ipsum id minus
+                            velit dolorum asperiores neque ipsa suscipit cum, quas fugit quis reprehenderit dignissimos
+                            aut dicta expedita reiciendis qui?
+                        </p>
+                    </div>
+                    <!-- Card Depoimento 3 -->
+                    <div class="card-item-depoimentos">
+                        <img src="assets/img/me.jpg" alt="Docca" />
+                        <p class="nome-user">Docca</p>
+                        <p class="depoimento-user">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione accusamus ipsum id minus
+                            velit dolorum asperiores neque ipsa suscipit cum, quas fugit quis reprehenderit dignissimos
+                            aut dicta expedita reiciendis qui?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="">
+                <a href="https://instagram.com/bipepinheiro" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/gabrielconsulo" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/Y4nnLS" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://br.linkedin.com/in/yang-souza-54900a20b" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
 </body>
+
 </html>

@@ -240,6 +240,7 @@ a {
       display: flex;
       flex-direction: column;
       gap: 6px;
+      z-index: 1001;
     }
   
     .btn-line {
@@ -262,13 +263,14 @@ a {
     }
   
     .menu-overlay {
-      position: unset;
+      position: fixed;
       inset: 0;
       background-color: rgba(0, 0, 0, 0.8);
-      z-index: -2;
+      z-index: 1000;
     }
     
     .menu-overlay.show {
       position: fixed;
+      z-index: 999;
     }
   }
