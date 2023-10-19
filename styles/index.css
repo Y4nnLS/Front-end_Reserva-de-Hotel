@@ -24,7 +24,7 @@
     position: relative;
     box-shadow: rgb(0 0 0 / 75%) 0px 13px 30px -12px;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -170,9 +170,7 @@
   }
 
   /*main*/
-  .container {
-    text-align: center; /* Centraliza o conteúdo */
-  }
+  
   .mapamundi{
     margin-top: 0;
   }
@@ -199,60 +197,60 @@
 }
 
  /*Estilização card de como funciona*/
- .card-container {
+ .cards{
   display: flex;
-  justify-content: center; /* Centraliza os cards na horizontal */
-  align-items: center; /* Centraliza os cards na vertical */
-  height: 30vh; /* Define a altura do contêiner para ocupar a altura total da tela */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 8px;
 }
 
-.cards {
-  flex: 1; /* Faz com que os cards tenham a mesma largura */
-  margin: 5px; /* Adiciona algum espaçamento entre os cards */
+.container__cards {
+  text-align: center; /* Centraliza o conteúdo */
+}
+.depoimentos{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+
+}
+.depoimentos .card-item{
+  background-color: #af8dff;
+  margin: 15px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  transition: 0.2s;
 }
 
- .card {
-  flex: 1;
-  margin: 0 10px;
-  border: 1px solid #ccc;
-  width: 190px;
-  height: 254px;
-  background: rgba(240, 186, 247);
-  border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #100a;
+.depoimentos .card-item img{
+  border-radius: 80%;
+  width: 80px;
 }
 
-.card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #f5f5;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
-}
-
-.card span {
+.depoimentos .card-item .nome-user{
   font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.2s;
 }
 
-.card .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 12px;
+.depoimentos .card-item  .depoimento-user{
+  font-size: 15px;
+  padding: 0 15px;
 }
 
-.card .img {
-  width: 70px;
-  height: 80px;
-  background: #f5f5;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 25px;
+.depoimentos .card-item:hover{
+  background-color: #6546af;
+  margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user{
+  color: white;
+}
+
+/*sla*/
+.container__descricao{
+  text-align: center;
+  margin-top: 20px;
 }
