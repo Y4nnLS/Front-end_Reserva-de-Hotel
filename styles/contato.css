@@ -45,11 +45,26 @@ p{
     background-color: #af8dff;
     
 }
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* altura do rodapé */
+}
+
+/* .container__footer{
+  height: 100vh;
+} */
 
 .container{
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
+}
+.container__matricula{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
 .contato-info{

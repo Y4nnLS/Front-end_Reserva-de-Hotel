@@ -270,3 +270,13 @@ aside input[type="submit"]:hover {
     flex: 2;
     padding: 20px;
 }
+
+/*Estilização da tabela*/
+.tabela, th, td{
+  border-collapse: collapse; /*define a separação entre as bordar*/
+  padding: 10px;
+  text-align: left;
+}
+th{
+  background-color: lightgray;
+}

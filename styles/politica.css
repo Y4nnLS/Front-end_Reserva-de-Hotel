@@ -49,7 +49,6 @@ p{
 
 #footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
   height: 2.5rem;            /* altura do rodapé */
 }
@@ -60,7 +59,7 @@ p{
     padding: 0 5%;
 }
 .central-ajuda .banner {
-    background-image: url(https://www.cookieyes.com/wp-content/uploads/2022/05/Privacy-policy-01.png)
+    background-color: #512da8;
 }
 .banner .item.mob{
     height: 200px;
@@ -251,3 +250,41 @@ a {
       position: fixed;
     }
   }
+
+  /*Textos*/
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para os parágrafos de texto */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Estilo para a lista de itens */
+ol {
+    list-style: decimal;
+    padding-left: 1em;
+}
+
+/* Estilo para os itens da lista */
+li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+/* Estilo para os itens em negrito */
+strong {
+    font-weight: bold;
+}
+
+.conteudo {
+  padding: 30px 100px;
+}

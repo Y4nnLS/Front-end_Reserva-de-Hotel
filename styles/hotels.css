@@ -60,24 +60,41 @@ p{
     padding: 0 5%;
 }
 
-.sobre .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sobre .sobre-text{
-    width: 50%;
-    padding-right: 40px;
+.sobre .sobre-text {
+  width: 50%;
+  padding-right: 40px;
+  float: right; /* Add this line to float the element to the right */
 }
 
-.sobre .sobre-text p{
-    margin: 18px 0;
-    color: black;
+.sobre .sobre-text {
+  width: 60%; /* Adjust the width as needed */
+  padding-left: 40px; /* Add padding to separate from images */
+}
+
+.sobre-quarto p {
+  margin: 18px 0;
+  color: black;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.sobre-quarto ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sobre-quarto ul li {
+  margin-bottom: 8px;
+  font-size: 16px; /* Adjust font size as needed */
 }
 
 .sobre .sobre-img{
-    width: 80%;
+    width: 100%;
 }
 
 .sobre .sobre-img img{
@@ -248,7 +265,63 @@ a {
 
 .photos {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, min-width);
   grid-gap: 10px;
   padding: 10px;
+}
+
+/*Teste de grid*/
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  column-count: 3;
+  font-family: arial;
+  margin-left: 10%;
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+.gallery-item figure {
+  margin: 0;
+  position: relative;
+}
+.gallery-item figcaption {
+  font-style: italic;
+  padding: 8px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 3px;
+  color: #fff;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 0 0 14px 14px;
+}
+.gallery-item img {
+  width: 100%;
+  border-radius: 14px;
+}
+.gallery-item p {
+  margin: 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
 }
