@@ -278,6 +278,8 @@ Carrossel de imagens
   max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  border-radius: 10px;
+
 }
 
 .card img {
@@ -288,6 +290,7 @@ Carrossel de imagens
 
 .hoteis-card .card-item {
   padding: 10px;
+  border-radius: 10px;
 }
 
 .hoteis-card .card-item p {
@@ -476,6 +479,7 @@ Carrossel de imagens
   color: black;
   padding: 20px 30px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .C-title button:hover {
