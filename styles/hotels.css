@@ -239,3 +239,16 @@ a {
       position: fixed;
     }
   }
+
+.photos img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}

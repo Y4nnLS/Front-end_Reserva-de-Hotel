@@ -144,11 +144,13 @@ li a {
 /*footer*/
 footer {
   padding: 54px 0;
+  
 }
 
 .footer {
   background-color: #512da8;
   text-align: center;
+  position: relative;
 }
 
 .footer i {
