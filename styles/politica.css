@@ -237,11 +237,12 @@ li a {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 
+  
+
   .menu-overlay.show {
     position: fixed;
   }
 }
-
 
   /*Textos*/
   h2 {
@@ -258,21 +259,6 @@ p {
     margin-bottom: 1em;
 }
 
-/* Estilo para a lista de itens */
-ol {
-    list-style: decimal;
-    padding-left: 1em;
-}
-
-/* Estilo para os itens da lista */
-li {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 0.5em;
-}
-
-/* Estilo para os itens em negrito */
 strong {
     font-weight: bold;
 }
