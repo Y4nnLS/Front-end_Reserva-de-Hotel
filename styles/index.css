@@ -85,7 +85,7 @@ li a {
     padding: 32px 0;
     border-top: outset;
     gap: 0;
-    z-index: -1;
+    z-index: 1;
 
     transition: 0.5s;
   }
@@ -131,12 +131,7 @@ li a {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 
-  .menu-overlay {
-    position: unset;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -2;
-  }
+  
 
   .menu-overlay.show {
     position: fixed;
